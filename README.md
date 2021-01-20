@@ -1,2 +1,2 @@
-# template_interior
+# Interior Website - Landing Page
 Landing Page For Interior Website
