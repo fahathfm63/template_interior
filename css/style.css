@@ -25,6 +25,10 @@
     width: 160px;
     cursor: pointer;
 }
+.logo:hover{
+    content: url(/img/logo2-2.png);
+}
+
 .navbar ul li{
     list-style: none;
     display: inline-block;
@@ -41,7 +45,7 @@
     content: '';
     height: 3px;
     width: 0;
-    background-color: #aab600;
+    background-color: #bda400;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -49,4 +53,52 @@
 }
 .navbar ul li:hover::after{
     width: 100%;
+}
+.content{
+    width: 100%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 2px;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid  #bda400;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer; 
+    position: relative;
+    overflow: hidden;
+}
+.btn-span{
+    background: #bda400;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover .btn-span{
+    width: 100%;
+}
+button:hover{
+    border: none;
 }
