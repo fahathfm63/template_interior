@@ -22,10 +22,9 @@
 }
 
 .logo{
-    width: 120px;
+    width: 160px;
     cursor: pointer;
 }
-
 .navbar ul li{
     list-style: none;
     display: inline-block;
@@ -37,4 +36,17 @@
     text-decoration: none;
     color: #ffffff;
     text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #aab600;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
 }
